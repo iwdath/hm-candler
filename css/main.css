@@ -1,0 +1,23 @@
+@font-face {
+  src:
+    url("../fonts/YesevaOneRegular.woff2"),
+    url("../fonts/YesevaOneRegular.woff");
+    font-family: "Yeseva One";
+    font-weight: 400;
+}
+
+@font-face {
+  src:
+    url("../fonts/ComfortaaRegular.woff2"),
+    url("../fonts/ComfortaaRegular.woff");
+    font-family: Comfortaa;
+    font-weight: 400;
+}
+
+@font-face {
+  src:
+    url("../fonts/ComfortaaSemiBold.woff2"),
+    url("../fonts/ComfortaaSemiBold.woff");
+    font-family: Comfortaa;
+    font-weight: 600;
+}
