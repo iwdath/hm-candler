@@ -21,3 +21,91 @@
     font-family: Comfortaa;
     font-weight: 600;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #000;
+  font-family: Comfortaa, sans-serif;
+  /* font-family: "Yeseva One", serif; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1180px;
+  padding: 0 10px 0;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fff8f3;
+}
+
+.header__inner {
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  gap: 20px;
+}
+
+.menu__link {
+  text-transform: uppercase;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/phone.svg");
+  width: 20px;
+  height: 20px;
+  left: -23px;
+  top: -3px;
+}
+
+.footer__inner {
+  padding: 40px 0 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  width: 230px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
