@@ -40,7 +40,10 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
-  overflow-x: hidden;
+}
+
+.site-container {
+  overflow: hidden;
 }
 
 ul {
