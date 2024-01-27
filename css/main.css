@@ -292,6 +292,44 @@ button {
 }
 
 
+.steps__list {
+  gap: 70px 25px;
+  counter-reset: number;
+}
+
+.steps__item {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  position: relative;
+}
+
+.steps__item::before {
+  counter-increment: number;
+  content: "0"counter(number);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Yeseva One", serif;
+  font-size: 30px;
+  color: #bea495;
+}
+
+.steps__item:nth-child(n+10):before {
+  content: counter(number);
+}
+
+.steps__item.steps__item--even::before {
+  left: auto;
+  right: 15px;
+}
+
+.steps__item-text {
+  flex-basis: 174px;
+  padding-bottom: 40px;
+}
+
+
 .footer__inner {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -312,6 +350,26 @@ button {
   gap: 15px;
 }
 
+
+@media (max-width: 1060px) {
+  .steps__list {
+    gap: 37px 35px;
+  }
+
+  .steps__item {
+    gap: 30px;
+  }
+
+  .steps__item-text {
+    flex-basis: 140px;
+  }
+
+  .steps__img {
+    width: 128px;
+    height: 225px;
+    object-fit: cover;
+  }
+}
 
 @media (max-width: 1000px) {
   .container {
@@ -383,6 +441,14 @@ button {
 
   .products__content {
     gap: 30px 15px;
+  }
+
+  .steps__list {
+    gap: 25px 35px;
+  }
+
+  .steps__item {
+    gap: 20px;
   }
 }
 
@@ -515,6 +581,21 @@ button {
     font-size: 12px;
     padding: 12px 26px;
   }
+
+  .steps__item::before {
+    font-size: 20px;
+  }
+
+  .steps__item-text {
+    flex-basis: 93px;
+    font-size: 8px;
+    padding-bottom: 30px;
+  }
+
+  .steps__img {
+    width: 85px;
+    height: 150px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -557,6 +638,10 @@ button {
   .section__descr {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .steps__item {
+    width: 200px;
   }
 }
 
@@ -666,6 +751,29 @@ button {
     width: 300px;
     margin: 0 auto 30px;
   }
+
+  .steps__list {
+    gap: 25px 40px;
+  }
+
+  .steps__item {
+    width: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .steps__list {
+    gap: 20px 25px;
+  }
+
+  .steps__item {
+    gap: 15px;
+  }
+
+  .steps__img {
+     width: 66px;
+     height: 100px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -744,7 +852,7 @@ button {
     font-size: 8px;
   }
 
-  .section__content {
+  .products__content {
     gap: 40px 7px;
   }
 
@@ -774,5 +882,14 @@ button {
   .btn {
     font-size: 8px;
     padding: 11px 21px;
+  }
+
+  .steps__item::before {
+    font-size: 12px;
+  }
+
+  .steps__item-text {
+    font-size: 6px;
+    padding-bottom: 20px;
   }
 }
