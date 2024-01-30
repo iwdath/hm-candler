@@ -971,6 +971,7 @@ button {
     width: 152px;
     bottom: 11px;
     right: -95px;
+    padding: 15px 9px;
   }
 
   .team__item-name {
