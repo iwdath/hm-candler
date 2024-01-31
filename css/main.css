@@ -494,6 +494,34 @@ button {
   width: auto;
 }
 
+.promo {
+  background-image: url("../img/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+}
+
+.promo__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 110px;
+  padding-left: 55px;
+  padding-right: 115px;
+}
+
+.promo__text {
+  font-family: "Yeseva One", serif;
+  font-size: 40px;
+  color: #fff;
+  width: 100%;
+}
+
+.promo__link {
+  min-width: 170px;
+}
+
 .footer__inner {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -619,6 +647,16 @@ button {
 
   .certificates__slider {
     width: 660px;
+  }
+
+  .promo {
+    padding: 120px 0;
+  }
+
+  .promo__inner {
+    gap: 110px;
+    padding-left: 60px;
+    padding-right: 45px;
   }
 }
 
@@ -935,6 +973,24 @@ button {
   .swiper-pagination-bullet {
     width: 28px;
   }
+
+  .promo {
+    padding: 55px 0;
+  }
+
+  .promo__inner {
+    gap: 85px;
+    padding: 0 33px;
+  }
+
+  .promo__text {
+    font-size: 15px;
+  }
+
+  .promo__link {
+    padding: 13px 28px;
+    min-width: 125px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -993,6 +1049,10 @@ button {
 
   .certificates__slider {
     width: auto;
+  }
+
+  .promo__inner {
+    padding: 0 33px;
   }
 }
 
@@ -1118,6 +1178,21 @@ button {
   .team__content {
     gap: 30px 100px;
     justify-content: start;
+  }
+
+  .promo {
+    padding: 42px 0;
+  }
+
+  .promo__inner {
+    gap: 50px;
+    padding: 0 42px;
+  }
+
+  .promo__link {
+    padding: 11px 16px;
+    min-width: 78px;
+    font-size: 8px;
   }
 }
 
@@ -1340,5 +1415,13 @@ button {
 
   .feedback__btn {
     position: static;
+  }
+
+  .promo__inner {
+    padding: 0 10px;
+  }
+
+  .promo__link {
+    padding: 11px 16px;
   }
 }
