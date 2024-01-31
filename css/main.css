@@ -522,6 +522,61 @@ button {
   min-width: 170px;
 }
 
+.contacts {
+  padding: 150px 0 50px;
+}
+
+.contacts__inner {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.form {
+  background-color: #fff;
+  width: 100%;
+  padding: 75px 42px;
+  box-shadow: 0px 4px 11px 0px rgba(199, 175, 165, 0.30);
+}
+
+.form__title {
+  font-family: "Yeseva One", serif;
+  margin-bottom: 60px;
+  font-size: 40px;
+}
+
+.form .form__input+.form__input {
+  margin: 15px 0 42px;
+}
+
+.form__input {
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #000;
+  padding: 10px 7px;
+  font-family: Comfortaa, sans-serif;
+  color: #000;
+  font-size: 14px;
+}
+
+.form__input::placeholder {
+  font-family: Comfortaa, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__btn {
+  padding: 18px 35px;
+}
+
 .footer__inner {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -657,6 +712,20 @@ button {
     gap: 110px;
     padding-left: 60px;
     padding-right: 45px;
+  }
+
+  .contacts__inner {
+    gap: 30px;
+  }
+
+  .form {
+    padding: 75px 21px;
+  }
+
+  .contacts__img {
+    width: 335px;
+    height: 510px;
+    object-fit: cover;
   }
 }
 
@@ -991,6 +1060,36 @@ button {
     padding: 13px 28px;
     min-width: 125px;
   }
+
+  .contacts__inner {
+    gap: 15px;
+  }
+
+  .form {
+    padding: 30px 21px;
+  }
+
+  .form .form__input+.form__input {
+    margin-bottom: 30px;
+  }
+
+  .form__input {
+    font-size: 12px;
+  }
+
+  .form__input::placeholder {
+    font-size: 12px;
+  }
+
+  .form__title {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__img {
+    width: 187px;
+    height: 285px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1193,6 +1292,31 @@ button {
     padding: 11px 16px;
     min-width: 78px;
     font-size: 8px;
+  }
+
+  .contacts {
+    padding: 50px 0;
+  }
+
+  .contacts__inner {
+    gap: 0;
+  }
+
+  .form__input {
+    font-size: 10px;
+  }
+
+  .form__input::placeholder {
+    font-size: 10px;
+  }
+
+  .form__btn {
+    font-size: 8px;
+    padding: 13px 15px;
+  }
+
+  .contacts__img {
+    display: none;
   }
 }
 
@@ -1423,5 +1547,10 @@ button {
 
   .promo__link {
     padding: 11px 16px;
+  }
+
+  .form__btn {
+    font-size: 8px;
+    padding: 13px 15px;
   }
 }
