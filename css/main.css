@@ -421,6 +421,76 @@ button {
   font-size: 10px;
 }
 
+.feedback__content {
+  padding-left: 20px;
+  padding-bottom: 120px;
+}
+
+.feedback__slider {
+  width: 768px;
+  overflow: hidden;
+}
+
+.feedback__item {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.feedback__video {
+  position: relative;
+}
+
+.feedback__videobtn {
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feedback__sociallink {
+  margin-bottom: 12px;
+}
+
+.feedback__name {
+  font-family: "Yeseva One", serif;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.feedback__box-text {
+  margin-bottom: 60px;
+}
+
+.feedback__btn {
+  padding: 20px 35px;
+  position: absolute;
+  right: 0;
+  bottom: 18px;
+}
+
+.feedback__content .swiper-pagination {
+  bottom: 65px;
+}
+
+.swiper-pagination-bullet {
+  width: 53px;
+  height: 4px;
+  background-color: #bea495;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7b6152;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
 .footer__inner {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -518,6 +588,23 @@ button {
     padding: 0;
     margin: 0;
     justify-content: start;
+  }
+
+  .feedback__inner {
+    grid-template-columns: 260px auto;
+  }
+
+  .feedback__descr {
+    margin-right: 35px;
+  }
+
+  .feedback__content {
+    padding-left: 0;
+    padding-bottom: 105px;
+  }
+
+  .feedback__slider {
+    width: 660px;
   }
 }
 
@@ -766,6 +853,60 @@ button {
   .team__item-descr {
     font-size: 6px;
   }
+
+  .feedback__inner {
+    grid-template-columns: 200px auto;
+  }
+
+  .feedback__descr {
+    margin-right: 15px;
+  }
+
+  .feedback__content {
+    padding-bottom: 95px;
+  }
+
+  .feedback__slider {
+    width: 420px;
+  }
+
+  .feedback__item {
+    gap: 10px;
+  }
+
+  .feedback__img {
+    width: 200px;
+  }
+
+  .feedback__videobtn,
+  .feedback__videobtn img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feedback__sociallink-img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .feedback__name {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  .feedback__box-text {
+    font-size: 10px;
+  }
+
+  .feedback__btn {
+    font-size: 8px;
+    padding: 15px 20px;
+    bottom: 0;
+  }
+
+  .swiper-pagination-bullet {
+    width: 28px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -816,6 +957,10 @@ button {
 
   .team__content {
     justify-content: center;
+  }
+
+  .feedback__slider {
+    width: auto;
   }
 }
 
@@ -934,11 +1079,12 @@ button {
     width: auto;
   }
 
-  .team__content {
-    gap: 30px 100px;
+  .team {
+    margin-bottom: 50px;
   }
 
   .team__content {
+    gap: 30px 100px;
     justify-content: start;
   }
 }
@@ -977,7 +1123,7 @@ button {
   .team__item-name {
     font-size: 12px;
   }
-  
+
   .team__item-descr {
     font-size: 10px;
   }
@@ -1144,5 +1290,23 @@ button {
 
   .courses__btn {
     font-size: 12px;
+  }
+
+  .feedback__item {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  .feedback__img {
+    width: 250px;
+  }
+
+  .feedback__box-text {
+    margin: 0 auto 20px;
+    max-width: 250px;
+  }
+
+  .feedback__btn {
+    position: static;
   }
 }
