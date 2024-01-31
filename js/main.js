@@ -19,3 +19,18 @@ const swiperOne = new Swiper('.feedback__slider', {
     },
   },
 });
+
+const swiperTwo = new Swiper('.certificates__slider', {
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  grabCursor: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    1000: {
+      spaceBetween: 20,
+    },
+  },
+});
