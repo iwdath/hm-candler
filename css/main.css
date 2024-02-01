@@ -494,6 +494,63 @@ button {
   width: auto;
 }
 
+.questions__content {
+  padding-left: 20px;
+}
+
+.accordeon .accordeon__item+.accordeon__item {
+  margin-top: 10px;
+}
+
+.accordeon__item {
+  background-color: #fff;
+  box-shadow: 0 4px 11px 0 rgba(196, 174, 151, 0.2);
+}
+
+.accordeon__title {
+  font-size: 16px;
+  font-family: "Yeseva One", serif;
+  background-color: transparent;
+  padding: 16px 60px 16px 13px;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.accordeon__title::after {
+  content: "";
+  background-image: url("../img/arrow.svg");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .3s;
+}
+
+.accordeon__title.accordeon__title--active::after {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.accordeon__content {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity .3s, max-height .3s;
+}
+
+.accordeon__content.accordeon__content--visible {
+  opacity: 1;
+}
+
+.accordeon__content ol {
+  padding-left: 30px;
+}
+
+.accordeon__text {
+  padding: 2px 13px 16px;
+}
+
 .promo {
   background-image: url("../img/promo-bg.jpg");
   background-repeat: no-repeat;
@@ -726,6 +783,27 @@ button {
     width: 335px;
     height: 510px;
     object-fit: cover;
+  }
+
+  .questions__content {
+    padding-left: 35px;
+  }
+
+  .accordeon__title {
+    padding-left: 11px;
+  }
+
+  .accordeon__title::after {
+    right: 14px;
+  }
+
+  .accordeon__content ol {
+    padding-left: 28px;
+  }
+
+  .accordeon__text {
+    padding-left: 11px;
+    padding-right: 11px;
   }
 }
 
@@ -1089,6 +1167,33 @@ button {
   .contacts__img {
     width: 187px;
     height: 285px;
+  }
+
+  .questions__content {
+    padding-left: 0;
+  }
+
+  .accordeon__title {
+    font-size: 12px;
+  }
+
+  .accordeon__title {
+    padding: 12px 40px 12px 7px;
+  }
+
+  .accordeon__title::after {
+    width: 14px;
+    height: 14px;
+    right: 7px;
+    background-size: cover;
+  }
+
+  .accordeon__text {
+    padding: 2px 7px 12px;
+  }
+
+  .accordeon__content ol {
+    padding-left: 19px;
   }
 }
 
@@ -1552,5 +1657,25 @@ button {
   .form__btn {
     font-size: 8px;
     padding: 13px 15px;
+  }
+
+  .accordeon__title {
+    font-size: 10px;
+    padding: 9px 30px 9px 5px;
+
+  }
+
+  .accordeon__title::after {
+    width: 10px;
+    height: 10px;
+    right: 6px;
+  }
+
+  .accordeon__text {
+    padding: 2px 5px 9px;
+  }
+
+  .accordeon__content ol {
+    padding-left: 14px;
   }
 }
